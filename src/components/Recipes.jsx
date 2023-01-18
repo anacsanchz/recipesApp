@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { getData } from '../services/getData';
 import { BiTime } from 'react-icons/bi';
 import { AiFillTag } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 /*Images*/
 import img1 from '../assets/1.jpg';
@@ -29,6 +30,12 @@ const Recipes = () => {
     data();
   }, []);
 
+  const navigate = useNavigate() 
+
+  const goToDetail = (id) =>{
+    navigate(`/recipe/${id}`)
+  }
+
 //   console.log(recipes);
   return (
     <div className="container">
@@ -47,7 +54,7 @@ const Recipes = () => {
                   {recipe.preptime} minutes
                 </p>
               </div>
-              <a className="recipeName" href=''>{recipe.name}</a>
+              <a className="recipeName" href='' onClick={() => goToDetail(recipe.id)}>{recipe.name}</a>
               <div className="tags">
                 <p className='tagsLine'>
                   <span className="icon">

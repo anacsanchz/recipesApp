@@ -112,13 +112,13 @@
         "cooktime": 1080,
         "servings": 3,
         "comments": "If dill is not available, add 1 tsp of Old Bay seasoning to the batter in place of the salt and pepper.",
-        "calories": 0,
-        "fat": 0,
-        "satfat": 0,
-        "carbs": 0,
-        "fiber": 0,
-        "sugar": 0,
-        "protein": 0,
+        "calories": 200,
+        "fat": 100,
+        "satfat": 145,
+        "carbs": 15,
+        "fiber": 22,
+        "sugar": 12,
+        "protein": 100,
         "instructions": "Preheat oven to 200F.\r\n\r\nIn a large bowl, whisk together the flour, sugar, baking powder, salt, and pepper. In a small bowl, lightly whisk the egg yolks, then whisk in the milk, 2 tablespoons of melted butter and lemon juice. Add the yolk mixture to the flour mixture and, using a wooden spoon, stir until well blended. The batter will be lumpy.\r\n\r\nIn a clean bowl, using an electric mixer on high speed, beat the egg whites until stiff, but not dry, peaks form. Using a silicone spatula, fold about one-third of the egg whites into the batter to lighten it, then fold in the rest just until no white streaks remain. Stir in fresh dill.\r\n\r\nBrush the wells of the ebelskiver pan with some of the remaining melted butter and place over medium heat. When the butter starts to bubble, add about 1 tablespoon batter to each well. Working quickly, carefully spoon about 1/2 teaspoon of the smoked salmon into the center of each pancake, then spoon about 1/2 teaspoon of the cream cheese on top. Top each with another 1 tablespoon batter. (Alternatively, gently mix the cream cheese and salmon together. Spoon about 1 teaspoon into the center of each pancake)\r\n\r\nCook until the bottoms of the pancakes are lightly browned and crisp, 3-5 minutes. Use 2 short wooden skewers to turn all the  pancakes and cook until lightly browned on the second side, about 3 minutes longer.\r\n\r\nTransfer the finished pancakes to a platter and keep warm  in the oven while you repeat to make 2 more batches. Serve right away.",
         "ingredients": [
             "1 cup all-purpose flour\r",
@@ -132,8 +132,7 @@
             "1 tsp fresh lemon juice\r",
             "1/4 cup fresh dill, chopped and firmly packed\r",
             "3 1/2 tbsp smoked salmon, minced (about 4 oz)\r",
-            "3 1/2 tbsp whipped-style cream cheese, at room temperature\r",
-            "2 servings [cocktail sauce](http://www.xanthir.com/recipes/showrecipe.php?id=id50)"
+            "3 1/2 tbsp whipped-style cream cheese, at room temperature\r"
         ],
         "tags": [
             "salmon",
