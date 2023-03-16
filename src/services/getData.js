@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const getData = async () => {
-  const { data } = await axios.get('recipes.json');
-  return data.slice(0, 200);
+const getData = async (limit = 200) => {
+  const { data } = await axios.get('../recipes.json');
+  return data.slice(0, limit);
 };
 
-export { getData }
+export { getData };
