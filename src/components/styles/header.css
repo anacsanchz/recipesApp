@@ -43,4 +43,30 @@ a {
 .searchForm {
   display: flex;
 }
+.Dropdown-control {
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Dropdown-control:hover{
+  box-shadow: none;
+}
+.Dropdown-menu {
+  margin-top: 10px;
+  background-color: #F1FAF1;
+}
+.Dropdown-arrow {
+  top: 50%;
+}
+.Dropdown-arrow-wrapper{
+  display: flex;
+}
+.Dropdown-option{
+  color: black;
+}
+
 

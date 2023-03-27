@@ -2,7 +2,7 @@ import './styles/recipes.css';
 import { useState, useEffect } from 'react';
 import { getData } from '../services/getData';
 import { BiTime } from 'react-icons/bi';
-import { AiFillTag } from 'react-icons/ai';
+import { AiFillTag, AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 
 /*Images*/
@@ -28,15 +28,17 @@ const Recipes = () => {
       setRecipes(res);
     };
     data();
+
+    console.log(recipes)
   }, []);
 
-  const navigate = useNavigate() 
+  const navigate = useNavigate();
 
-  const goToDetail = (id) =>{
-    navigate(`/recipe/${id}`)
-  }
+  const goToDetail = (id) => {
+    navigate(`/recipe/${id}`);
+  };
 
-//   console.log(recipes);
+  //   console.log(recipes);
   return (
     <div className="container">
       <div className="recipes">
@@ -44,7 +46,7 @@ const Recipes = () => {
         <div className="all">
           {recipes.map((recipe, index) => (
             <div className="recipe" key={recipe.id}>
-              <img src={images[Math.floor(Math.random()*images.length)]} className="img" alt="" />
+              <img src={images[Math.floor(Math.random() * images.length)]} className="img" alt="" />
               <div className="recipeInfo">
                 <p className="calories">Calories: {recipe.calories}</p>
                 <p className="preptime">
@@ -54,14 +56,20 @@ const Recipes = () => {
                   {recipe.preptime} minutes
                 </p>
               </div>
-              <a className="recipeName" href='' onClick={() => goToDetail(recipe.id)}>{recipe.name}</a>
+              <a className="recipeName" href="" onClick={() => goToDetail(recipe.id)}>
+                {recipe.name}
+              </a>
               <div className="tags">
-                <p className='tagsLine'>
+                <p className="tagsLine">
                   <span className="icon">
                     <AiFillTag />
                   </span>
                   Tags: {recipe.tags.slice(0, 3).join(', ')}
                 </p>
+              </div>
+              <div className="favorite">
+                <AiOutlineHeart className="heartLine" />
+                <AiFillHeart className="heartFill" />
               </div>
             </div>
           ))}

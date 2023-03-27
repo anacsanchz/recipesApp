@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "name": "Salad"
+    },
+    {
+        "id": "2",
+        "name": "main"
+    },
+    {
+        "id": "3",
+        "name": "breakfast"
+    },
+    {
+        "id": "4",
+        "name": "sides"
+    },
+    {
+        "id": "5",
+        "name": "beef"
+    },
+    {
+        "id": "6",
+        "name": "vegetarian"
+    },
+    {
+        "id": "7",
+        "name": "snack"
+    },
+    {
+        "id": "8",
+        "name": "pasta"
+    },
+    {
+        "id": "9",
+        "name": "soup"
+    },
+    {
+        "id": "10",
+        "name": "rice"
+    },
+    {
+        "id": "11",
+        "name": "asian"
+    },
+    {
+        "id": "12",
+        "name": "german"
+    },
+    {
+        "id": "13",
+        "name": "mexican"
+    }
+]

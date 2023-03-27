@@ -67,3 +67,16 @@
     flex-direction: row;
     justify-content: center;
 }
+.heartLine{
+  font-size: 25px;
+}
+.heartFill{
+  color: #BB2D3C;
+  font-size: 25px;
+  display: none;
+}
+.favorite{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
