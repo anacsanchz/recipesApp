@@ -8,9 +8,8 @@ import { IoIosArrowUp } from 'react-icons/io';
 import { getCategories } from '../services/getCategories';
 import './styles/header.css';
 
-const Header = () => {
+const Header = ({setSelected}) => {
   const [options, setOptions] = useState([]);
-  const [selected, setSelected] = useState([]);
 
   useEffect(() => {
     const categories = async () => {
@@ -27,12 +26,14 @@ const Header = () => {
   return (
     <div className="header">
       <div>
-        <span className="appName">RecipesApp</span>
+        <a href="/">
+          <span className="appName">RecipesApp</span>
+        </a>
       </div>
       <div className="headerMenu">
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <Dropdown

@@ -7,6 +7,7 @@ const Router = () => {
       <Routes>
           <Route path='/' element={<App />} />
           <Route path='/recipe/:id' element={<Recipe />} />
+          <Route path='/' element={'<Recipes />'} />
       </Routes>
   )
 }

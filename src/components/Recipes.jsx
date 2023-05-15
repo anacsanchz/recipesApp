@@ -1,6 +1,4 @@
 import './styles/recipes.css';
-import { useState, useEffect } from 'react';
-import { getData } from '../services/getData';
 import { BiTime } from 'react-icons/bi';
 import { AiFillTag, AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
@@ -19,25 +17,13 @@ import img10 from '../assets/10.jpeg';
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
-const Recipes = () => {
-  const [recipes, setRecipes] = useState([]);
-
-  useEffect(() => {
-    const data = async () => {
-      const res = await getData();
-      setRecipes(res);
-    };
-    data();
-
-    console.log(recipes)
-  }, []);
+const Recipes = ({recipes}) => {
 
   const navigate = useNavigate();
 
   const goToDetail = (id) => {
     navigate(`/recipe/${id}`);
   };
-
   //   console.log(recipes);
   return (
     <div className="container">

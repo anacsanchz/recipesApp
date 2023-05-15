@@ -1,11 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { getRecipeDetail } from '../services/getRecipeDetail';
 import { useEffect, useState } from 'react';
+import ReactLoading from 'react-loading';
+
 
 import { BiTime } from 'react-icons/bi';
 import { AiFillTag } from 'react-icons/ai';
 import Layout from '../layout/layout';
 import Sidebar from './Sidebar';
+import MoreRecipes from './MoreRecipes';
 import './styles/recipe.css';
 
 /*Images*/
@@ -23,6 +26,7 @@ const Recipe = () => {
 
   const [recipeDetail, setRecipeDetail] = useState(null);
   const [latestRecipes, setLatestRecipes] = useState(null);
+  const [alsoLike, setAlsoLike] = useState(null);
 
   useEffect(() => {
     const data = async () => {
@@ -41,9 +45,20 @@ const Recipe = () => {
     getLatest();
   }, []);
 
+  useEffect(() => {
+    const getAlsoLike = async () => {
+      const res = await getData(4);
+      setAlsoLike(res);
+    };
+
+    getAlsoLike();
+  }, []);
+
   // console.log(recipeDetail.ingredients);
   if (!recipeDetail) {
-    return <h1>No se encontro</h1>; /*Hacer Loading*/
+    return <h5 className='loading'>...</h5>
+
+    ; /*Hacer Loading*/
   }
 
   return (
@@ -124,6 +139,9 @@ const Recipe = () => {
                 </tbody>
               </table>
             </div>
+          </div>
+          <div className="alsoLike">
+            <MoreRecipes alsoLike={alsoLike} />
           </div>
         </div>
         <div className="sidebar">

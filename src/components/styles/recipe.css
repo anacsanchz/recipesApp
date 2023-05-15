@@ -58,7 +58,7 @@
 .tableInfo td {
   width: 60px;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 .tableInfo td span {
   font-size: 20px;
@@ -70,4 +70,36 @@
 
 .sidebar {
   width: 35%;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alsoLike {
+  margin-top: 40px;
+}
+
+.recipeNameP {
+  font-size: 18px;
+}
+
+.alsoTitle {
+  text-align: left;
+  text-transform: capitalize;
+}
+.recipesBox {
+  display: flex;
+}
+
+.recipeImg {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.likeRecipe {
+  
+  width: 100%;
 }
