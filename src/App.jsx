@@ -8,6 +8,7 @@ import Recipes from './components/Recipes';
 import Banner from './assets/img.jpg';
 import './fonts/DMSans-Regular.ttf';
 import './index.css';
+import InProgress from './components/InProgress';
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <>
+      <InProgress />
       <Header setSelected={setSelected} />
       <img src={Banner} alt="" className="banner" />
       <Recipes recipes={recipes} />

@@ -30,3 +30,9 @@ button {
   background-color: white;
   padding: 20px 0;
 }
+
+.inProgress{
+  background-color: #b2ecb2;
+  text-align: center;
+  padding: 15px 0;
+}
